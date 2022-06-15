@@ -219,20 +219,24 @@
         <section class="delivery-form">
           <p class="delivery-form-description grey-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
           <form class="delivery-form-action" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="delivery-form-label">
-              Дата
-              <img class="hover-inf" src="" alt="Кнопка информации">
-              <input class="delivery-form-date" type="text" placeholder="01.04.2020" name="date">
-            </label>
+            <div class="date-with-button">
+              <label class="delivery-form-label">
+                Дата
+                <input class="delivery-form-date" type="text" placeholder="01.04.2020" name="date">
+              </label>
+              <button class="hover-inf-date" type="button"></button>
+            </div>
             <label class="delivery-form-label">
               Телефон
               <input class="delivery-form-tel" type="tel" placeholder="+7 800 999-00-00" name="tel">
             </label>
-            <label class="delivery-form-label">
-              Адрес
-              <img class="hover-inf" src="" alt="Кнопка информации">
-              <input class="delivery-form-address" type="text" placeholder="ул. Большая Конюшенная, 19/8" name="address">
-            </label>
+            <div class="address-with-button">
+              <label class="delivery-form-label">
+                Адрес
+                <input class="delivery-form-address" type="text" placeholder="ул. Большая Конюшенная, 19/8" name="address">
+              </label>
+              <button class="hover-inf-address" type="button"></button>
+            </div>
             <button class="delivery-form-submit form-button" type="submit">Отправить</button>
           </form>
         </section>
