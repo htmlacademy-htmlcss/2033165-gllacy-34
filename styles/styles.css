@@ -1,0 +1,225 @@
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/inter-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/inter-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    src: url("fonts/inter-900.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #2D3440;
+    background-color: #FEAFC3;
+}
+
+.button {
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #2D3440;
+    background-color: #FCFCFC;
+    text-decoration: none;
+}
+
+.navigation-link {
+    font-weight: 400;
+    line-height: 20px;
+    color: #2D3440;
+    text-decoration: none;
+}
+
+.navigation-link-tel {
+    font-weight: 700;
+}
+
+.navigation-link-button {
+    font-size: 14px;
+    background: rgba(252, 252, 252, 0.3);
+}
+
+.slider-title {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 46px;
+}
+
+.slider-description {
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 18px;
+}
+
+.gifts-title,
+.popular-title,
+.advantages-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.gifts-item-title {
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 24px;
+}
+
+.popular-link,
+.product-link {
+    font-weight: 700;
+    line-height: 24px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #2D3440;
+}
+
+.popular-item-description,
+.product-item-description {
+    text-align: center;
+}
+
+.grey-text {
+    color: #565C66;
+}
+
+.popular-price,
+.product-price {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.blog-subscribe-title {
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+.blog-title {
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 24px;
+}
+
+.blog-link {
+    text-decoration: none;
+    color: #2D3440;
+}
+
+.delivery-title,
+.catalog-product-title {
+    font-weight: 900;
+    line-height: 46px;
+    font-size: 32px;
+}
+
+.contacts-text {
+    font-style: normal;
+}
+
+.address-text {
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.tel-text-link {
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-decoration: none;
+    color: #2D3440;
+}
+
+.contacts-text-little {
+    font-size: 14px;
+    line-height: 20px;
+    font-style: normal;
+}
+
+.form-button {
+    font-weight: 700;
+    line-height: 20px;
+    font-size: 16px;
+    text-align: center;
+    color: #FCFCFC;
+    text-decoration: none;
+    background: #FF2F64;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #2D3440;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.footer-links-item:first-of-type {
+    font-weight: 700;
+}
+
+.made-text {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.html-academy-footer-link {
+    color: #2D3440;
+}
+
+
+.breadcrumbs-link {
+    line-height: 20px;
+    font-weight: 700;
+    color: #2D3440;
+    text-decoration: none;
+}
+
+.catalog-filter-title {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.filter-button {
+    font-weight: 700;
+    line-height: 20px;
+    font-size: 14px;
+    background-color: rgba(252, 252, 252, 0.3);
+}
+
+.select-control {
+    line-height: 20px;
+    font-size: 14px;
+    background-color: rgba(252, 252, 252, 0.3);
+}
+
+.pagination-link {
+    text-decoration: none;
+    color: #2D3440;
+    line-height: 20px;
+}
+
+.pagination-current {
+    background-color: #FCFCFC;
+}
