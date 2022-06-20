@@ -83,6 +83,13 @@ body {
     font-size: 24px;
 }
 
+.gifts-item {
+    background-color: #FF7799;
+    background-image: url("../images/main-page/gift1.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
 .popular-link,
 .product-link {
     font-weight: 700;
