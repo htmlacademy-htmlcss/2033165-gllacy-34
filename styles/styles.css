@@ -83,10 +83,17 @@ body {
     font-size: 24px;
 }
 
-.gifts-item {
+.gifts-item:first-child {
     background-color: #FF7799;
     background-image: url("../images/main-page/gift1.png");
-    background-size: 100% auto;
+    background-size: 219px 268px;
+    background-repeat: no-repeat;
+}
+
+.gifts-item:nth-of-type(2) {
+    background-color: #FF7799;
+    background-image: url("../images/main-page/gift2.png");
+    background-size: 219px 268px;
     background-repeat: no-repeat;
 }
 
@@ -132,6 +139,13 @@ body {
     color: #2D3440;
 }
 
+.blog {
+    background-color: #FFFFFF;
+    background-image: url("../images/main-page/news.jpg");
+    background-size: 570px 224px;
+    background-repeat: no-repeat;
+}
+
 .delivery-title,
 .catalog-product-title {
     font-weight: 900;
@@ -139,8 +153,22 @@ body {
     font-size: 32px;
 }
 
+.delivery {
+    background-color: #FFFFFF;
+    background-image: url("../images/main-page/delivery.jpg");
+    background-size: 1170px 534px;
+    background-repeat: no-repeat;
+}
+
 .contacts-text {
     font-style: normal;
+}
+
+.contacts {
+    background-color: #FFFFFF;
+    background-image: url("../images/main-page/feedback.jpg");
+    background-size: 1170px 492px;
+    background-repeat: no-repeat;
 }
 
 .address-text {
