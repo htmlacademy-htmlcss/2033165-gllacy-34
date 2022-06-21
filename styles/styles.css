@@ -22,13 +22,31 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "Inter", sans-serif;
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
     color: #2D3440;
     background-color: #FEAFC3;
+}
+
+.main-container {
+    flex-grow: 1;
+}
+
+.page-header {
+    display: flex;
+    width: 1170px;
+    margin: 0 auto;
 }
 
 .button {
@@ -38,6 +56,22 @@ body {
     color: #2D3440;
     background-color: #FCFCFC;
     text-decoration: none;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation-list {
+    width: 510px;
+    margin: 0;
+    padding: 0;
+    margin-left: 16px;
+}
+
+.navigation-user {
+    max-width: 480px;
+    margin-left: auto;
 }
 
 .navigation-link {
