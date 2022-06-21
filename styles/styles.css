@@ -430,18 +430,6 @@ body {
     width: 270px;
 }
 
-.catalog-pagination {
-    display: flex;
-}
-
-.pagination-show-more {
-    width: 179px;
-}
-
-.pagination {
-    width: 168px;
-}
-
 .pagination-link {
     text-decoration: none;
     color: #2D3440;
