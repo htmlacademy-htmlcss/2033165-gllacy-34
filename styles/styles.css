@@ -128,6 +128,22 @@ body {
     position: relative;
 }
 
+.navigation-link:hover {
+    background: rgba(252, 252, 252, 0.5);
+    border-radius: 30px;
+}
+
+.navigation-link:focus {
+    background: rgba(252, 252, 252, 0.5);
+    outline: 2px solid #2D3440;
+    border-radius: 30px;
+}
+
+.navigation-link:active {
+    background: #FCFCFC;
+    outline: 0;
+}
+
 .navigation-link:last-child {
     margin-right: 0;
 }
@@ -245,6 +261,26 @@ body {
     cursor: pointer;
 }
 
+.slider-button:hover {
+    background: #FCFCFC;
+}
+
+.slider-button:hover svg {
+    fill: #2D3440;
+}
+
+.slider-button:focus {
+    background: rgba(252, 252, 252, 0.3);
+    outline: 2px solid #2D3440;
+    border: 0;
+}
+
+.slider-button:active {
+    background: rgba(252, 252, 252, 0.5);
+    border: 0;
+    outline: 0;
+}
+
 .slider-button-svg {
     position: absolute;
     top: 0;
@@ -252,6 +288,7 @@ body {
     bottom: 0;
     left: 0;
     margin: auto;
+    fill: #FCFCFC;
 }
 
 .slider-image-not {
@@ -276,20 +313,38 @@ body {
     list-style-type: none;
 }
 
-.slider-paragraph-checked {
-    width: 12px;
-    height: 12px;
-    background-color: white;
-    border-radius: 50%;
-}
-
-.slider-paragraph {
+.slider-paragraph-link {
+    display: block;
+    list-style-type: none;
     width: 12px;
     height: 12px;
     background-color: white;
     opacity: 0.3;
     margin-left: 8px;
     border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-paragraph-link-not {
+    opacity: 1;
+    margin-left: 0;
+}
+
+.slider-paragraph-link:hover {
+    background: rgba(252, 252, 252, 0.3);
+    outline: 1px solid #FCFCFC;
+    opacity: 1;
+}
+
+.slider-paragraph-link:focus {
+    background: rgba(252, 252, 252, 0.3);
+    border: 1px solid #2D3440;
+}
+
+.slider-paragraph-link:active {
+    background-color: white;
+    opacity: 0.5;
+    outline: 0;
 }
 
 .slider-socials {
@@ -650,6 +705,14 @@ body {
     font-weight: 400;
     font-size: 16px;
     padding: 14px 16px;
+}
+
+.input:hover {
+    outline: 1px solid #2D3440;
+}
+
+.input:focus {
+    outline: 2px solid #2D3440;
 }
 
 .input::placeholder {
