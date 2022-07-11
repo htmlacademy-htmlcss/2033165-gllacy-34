@@ -61,11 +61,13 @@
                 </a>
               </div>
               <div class="slider-image-section slider-image-section-current">
+                <!-- Добавьте атрибут "disabled", чтобы выключить кнопку -->
                 <button class="slider-button" type="button">
                   <svg class="slider-button-svg" width="16" height="16" aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.8647 13.1352a.665.665 0 0 0 .9405-.9404L5.6039 7.9935l4.2013-4.2013a.665.665 0 0 0-.9404-.9405L4.196 7.5205l-.0029.0028a.665.665 0 0 0 0 .9404l4.6715 4.6715Z"/></svg>
                   <span class="visually-hidden">Предыдущее мороженое</span>
                 </button>
                 <img class="slider-image" src="images/main-page/icecream1.png" width="276" height="507" alt="Мороженое">
+                <!-- Добавьте атрибут "disabled", чтобы выключить кнопку -->
                 <button class="slider-button" type="button">
                   <svg class="slider-button-svg" width="16" height="16" aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.1352 2.8648a.665.665 0 1 0-.9405.9404l4.2013 4.2013-4.2013 4.2013a.665.665 0 0 0 .9405.9405l4.6687-4.6688.0028-.0028a.665.665 0 0 0 0-.9404L7.1352 2.8648Z"/></svg>
                   <span class="visually-hidden">Следующее мороженое</span>
@@ -113,7 +115,8 @@
           <div class="slider-pagination-section">
             <section class="slider-three-paragraphs">
               <ol class="slider-paragraph-list">
-                <li class="slider-paragraph slider-paragraph-checked"><a class="slider-paragraph-link slider-paragraph-link-not"></a></li>
+                <!-- Добавьте ссылке класс "slider-paragraph-link-checked", если пользователь находится на этой странице -->
+                <li class="slider-paragraph"><a class="slider-paragraph-link slider-paragraph-link-checked"></a></li>
                 <li class="slider-paragraph"><a class="slider-paragraph-link"></a></li>
                 <li class="slider-paragraph"><a class="slider-paragraph-link"></a></li>
               </ol>
@@ -170,10 +173,11 @@
               <p class="popular-item-description grey-text">Сливочное мороженое<br> с малиновым джемом</p>
               <section class="popular-buy">
                 <b class="popular-price">310 ₽/кг</b>
-                <a class="button-popular" href="#">
+                <!-- Добавьте кнопке атрибут "disabled", если нужно заблокировать кнопку -->
+                <button class="button-popular">
                   <svg class="button-popular-icon" aria-hidden="true" focusable="false" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.16667 2.10794c-.3682 0-.66667.29848-.66667.66667 0 .36819.29848.66666.66667.66666h1.77127l.46743 2.33539a.66396.66396 0 0 0 .01063.0531l.96738 4.83334.00012.0006c.08356.42.31212.7972.64571 1.0658.3319.2672.74674.4098 1.17262.4033h5.62067c.4259.0065.8408-.1361 1.1727-.4033.3337-.2687.5623-.6462.6458-1.0664l.001-.005.9271-4.86144a.6669.6669 0 0 0-.1412-.54985.66677.66677 0 0 0-.5137-.2417H4.61072L4.1381 2.64377c-.06236-.31157-.33595-.53583-.6537-.53583H1.16667Zm4.52431 8.29446-.81339-4.06396h8.23081l-.7756 4.06686a.49276.49276 0 0 1-.1737.2856.49257.49257 0 0 1-.3181.1087v-.0002H6.19614v-.0001l-.01277.0003a.49245.49245 0 0 1-.31807-.1087.4926.4926 0 0 1-.17413-.2876l-.00019-.0009Zm-1.13359 3.961c0-.688.55771-1.2457 1.24568-1.2457.68798 0 1.24569.5577 1.24569 1.2457 0 .6879-.55771 1.2457-1.24569 1.2457-.68797 0-1.24568-.5578-1.24568-1.2457Zm6.37331 0c0-.688.5577-1.2457 1.2457-1.2457.688 0 1.2457.5577 1.2457 1.2457 0 .6879-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5578-1.2457-1.2457Z"/></svg>
                   <span class="visually-hidden">Корзина</span>
-                </a>
+                </button>
               </section>
             </li>
             <li class="popular-item">
@@ -182,10 +186,10 @@
               <p class="popular-item-description grey-text">Фисташковый пломбир<br> с кусочками шоколада</p>
               <section class="popular-buy">
                 <b class="popular-price">340 ₽/кг</b>
-                <a class="button-popular" href="#">
+                <button class="button-popular">
                   <svg class="button-popular-icon" aria-hidden="true" focusable="false" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.16667 2.10794c-.3682 0-.66667.29848-.66667.66667 0 .36819.29848.66666.66667.66666h1.77127l.46743 2.33539a.66396.66396 0 0 0 .01063.0531l.96738 4.83334.00012.0006c.08356.42.31212.7972.64571 1.0658.3319.2672.74674.4098 1.17262.4033h5.62067c.4259.0065.8408-.1361 1.1727-.4033.3337-.2687.5623-.6462.6458-1.0664l.001-.005.9271-4.86144a.6669.6669 0 0 0-.1412-.54985.66677.66677 0 0 0-.5137-.2417H4.61072L4.1381 2.64377c-.06236-.31157-.33595-.53583-.6537-.53583H1.16667Zm4.52431 8.29446-.81339-4.06396h8.23081l-.7756 4.06686a.49276.49276 0 0 1-.1737.2856.49257.49257 0 0 1-.3181.1087v-.0002H6.19614v-.0001l-.01277.0003a.49245.49245 0 0 1-.31807-.1087.4926.4926 0 0 1-.17413-.2876l-.00019-.0009Zm-1.13359 3.961c0-.688.55771-1.2457 1.24568-1.2457.68798 0 1.24569.5577 1.24569 1.2457 0 .6879-.55771 1.2457-1.24569 1.2457-.68797 0-1.24568-.5578-1.24568-1.2457Zm6.37331 0c0-.688.5577-1.2457 1.2457-1.2457.688 0 1.2457.5577 1.2457 1.2457 0 .6879-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5578-1.2457-1.2457Z"/></svg>
                   <span class="visually-hidden">Корзина</span>
-                </a>
+                </button>
               </section>
             </li>
             <li class="popular-item">
@@ -194,10 +198,10 @@
               <p class="popular-item-description grey-text">Крем-брюле<br> с черничным джемом</p>
               <section class="popular-buy">
                 <b class="popular-price">330 ₽/кг</b>
-                <a class="button-popular" href="#">
+                <button class="button-popular">
                   <svg class="button-popular-icon" aria-hidden="true" focusable="false" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.16667 2.10794c-.3682 0-.66667.29848-.66667.66667 0 .36819.29848.66666.66667.66666h1.77127l.46743 2.33539a.66396.66396 0 0 0 .01063.0531l.96738 4.83334.00012.0006c.08356.42.31212.7972.64571 1.0658.3319.2672.74674.4098 1.17262.4033h5.62067c.4259.0065.8408-.1361 1.1727-.4033.3337-.2687.5623-.6462.6458-1.0664l.001-.005.9271-4.86144a.6669.6669 0 0 0-.1412-.54985.66677.66677 0 0 0-.5137-.2417H4.61072L4.1381 2.64377c-.06236-.31157-.33595-.53583-.6537-.53583H1.16667Zm4.52431 8.29446-.81339-4.06396h8.23081l-.7756 4.06686a.49276.49276 0 0 1-.1737.2856.49257.49257 0 0 1-.3181.1087v-.0002H6.19614v-.0001l-.01277.0003a.49245.49245 0 0 1-.31807-.1087.4926.4926 0 0 1-.17413-.2876l-.00019-.0009Zm-1.13359 3.961c0-.688.55771-1.2457 1.24568-1.2457.68798 0 1.24569.5577 1.24569 1.2457 0 .6879-.55771 1.2457-1.24569 1.2457-.68797 0-1.24568-.5578-1.24568-1.2457Zm6.37331 0c0-.688.5577-1.2457 1.2457-1.2457.688 0 1.2457.5577 1.2457 1.2457 0 .6879-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5578-1.2457-1.2457Z"/></svg>
                   <span class="visually-hidden">Корзина</span>
-                </a>
+                </button>
               </section>
             </li>
             <li class="popular-item">
@@ -206,10 +210,10 @@
               <p class="popular-item-description grey-text">Ванильный пломбир<br> со сладкой посыпкой</p>
               <section class="popular-buy">
                 <b class="popular-price">320 ₽/кг</b>
-                <a class="button-popular" href="#">
+                <button class="button-popular">
                   <svg class="button-popular-icon" aria-hidden="true" focusable="false" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.16667 2.10794c-.3682 0-.66667.29848-.66667.66667 0 .36819.29848.66666.66667.66666h1.77127l.46743 2.33539a.66396.66396 0 0 0 .01063.0531l.96738 4.83334.00012.0006c.08356.42.31212.7972.64571 1.0658.3319.2672.74674.4098 1.17262.4033h5.62067c.4259.0065.8408-.1361 1.1727-.4033.3337-.2687.5623-.6462.6458-1.0664l.001-.005.9271-4.86144a.6669.6669 0 0 0-.1412-.54985.66677.66677 0 0 0-.5137-.2417H4.61072L4.1381 2.64377c-.06236-.31157-.33595-.53583-.6537-.53583H1.16667Zm4.52431 8.29446-.81339-4.06396h8.23081l-.7756 4.06686a.49276.49276 0 0 1-.1737.2856.49257.49257 0 0 1-.3181.1087v-.0002H6.19614v-.0001l-.01277.0003a.49245.49245 0 0 1-.31807-.1087.4926.4926 0 0 1-.17413-.2876l-.00019-.0009Zm-1.13359 3.961c0-.688.55771-1.2457 1.24568-1.2457.68798 0 1.24569.5577 1.24569 1.2457 0 .6879-.55771 1.2457-1.24569 1.2457-.68797 0-1.24568-.5578-1.24568-1.2457Zm6.37331 0c0-.688.5577-1.2457 1.2457-1.2457.688 0 1.2457.5577 1.2457 1.2457 0 .6879-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5578-1.2457-1.2457Z"/></svg>
                   <span class="visually-hidden">Корзина</span>
-                </a>
+                </abutton
               </section>
             </li>
           </ul>
