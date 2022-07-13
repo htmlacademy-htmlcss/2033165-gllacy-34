@@ -306,6 +306,10 @@ body {
     padding-top: 15px;
 }
 
+.slider-button-not {
+    display: none;
+}
+
 .slider-button {
     position: relative;
     display: block;
@@ -1642,6 +1646,14 @@ body {
   background-color: currentColor;
   border-radius: 50%;
   content: "";
+}
+
+.control-input:focus + .control .control-mark {
+    outline: 2px solid #FCFCFC;
+}
+
+.control-input:focus + .control .control-mark-checkbox {
+    outline: 2px solid #FCFCFC;
 }
 
 .control-label {
