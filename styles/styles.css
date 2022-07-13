@@ -1581,10 +1581,7 @@ body {
 
 .control:hover .control-mark {
     border-color: #FCFCFC;
-}
-
-.control:hover .control-mark::before {
-    background-color: #FCFCFC;
+    color: #FCFCFC;
 }
 
 .control-input:disabled + .control .control-mark {
@@ -1597,7 +1594,7 @@ body {
   left: 3px;
   width: 6px;
   height: 6px;
-  background-color: #2D3440;
+  background-color: currentColor;
   border-radius: 50%;
   content: "";
 }
@@ -1635,11 +1632,14 @@ body {
     opacity: 0.5;
 }
 
-.control-input[type="checkbox"]:checked + .control .control-mark-checkbox::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 16px;
-    height: 16px;
-    content: "";
+.checked {
+    display: none;
+}
+
+.control-input:checked ~ .control .default {
+    display: none;
+}
+
+.control-input:checked ~ .control .checked {
+    display: block;
 }
