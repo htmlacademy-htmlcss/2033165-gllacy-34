@@ -1441,7 +1441,8 @@ body {
     cursor: pointer;
 }
 
-.little-white-sircle {
+.range-toogle::before {
+    content: "";
     width: 4px;
     height: 4px;
     background: #FCFCFC;
@@ -1453,7 +1454,7 @@ body {
     background: #FCFCFC;
 }
 
-.range-toogle:hover div {
+.range-toogle:hover::before {
     background: #2D3440;
 }
 
@@ -1462,7 +1463,7 @@ body {
     border: 2px solid #2D3440;
 }
 
-.range-toogle:focus div {
+.range-toogle:focus::before {
     background: #2D3440;
 }
 
@@ -1470,6 +1471,6 @@ body {
     background: #2D3440;
 }
 
-.range-toogle:active div {
+.range-toogle:active::before {
     background: #2D3440;
 }
