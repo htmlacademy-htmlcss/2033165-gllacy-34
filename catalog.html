@@ -12,7 +12,8 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Каталог</a>
+            <!-- Добавьте класс "navigation-link-current", если пользователь на этой странице -->
+            <a class="navigation-link navigation-link-current" href="catalog.html">Каталог</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -83,7 +84,7 @@
                 </legend>
                 <div class="catalog-slider">
                   <div class="grey-line">
-                    <div class="black-line" style="left: 40px; width: 56px;">
+                    <div class="black-line" style="left: 32px; width: 72px;">
                       <button class="range-toogle before-button" type="button">
                         <span class="visually-hidden">Кнопка «от»</span>
                       </button>
@@ -95,8 +96,8 @@
                 </div>
               </fieldset>
               <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Жирность:</legend>
-                <ul class="catalog-filter-list">
+                <legend class="catalog-filter-title catalog-filter-title-fat">Жирность:</legend>
+                <ul class="catalog-filter-list catalog-filter-list-fat">
                   <li class="catalog-filter-item">
                     <input class="control-input visually-hidden" type="radio" name="fat-content" value="0" id="0">
                     <label class="control" for="0">
@@ -129,7 +130,7 @@
               </fieldset>
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Наполнители:</legend>
-                <ul class="catalog-filter-list">
+                <ul class="catalog-filter-list catalog-filter-list-fillers">
                   <li class="catalog-filter-item">
                     <input class="control-input visually-hidden" type="checkbox" name="chocolate" id="chocolate" checked>
                     <label class="control" for="chocolate">
@@ -170,7 +171,7 @@
                       <span class="control-label">сиропы</span>
                     </label>
                   </li>
-                  <li class="catalog-filter-item">
+                  <li class="catalog-filter-item catalog-filter-item-fillers">
                     <input class="control-input visually-hidden" type="checkbox" name="jams" id="jams">
                     <label class="control" for="jams">
                       <span class="control-mark-checkbox">
@@ -190,7 +191,7 @@
               <li class="product-item">
                 <a href="#" class="product-link"><img class="product-img" src="images/catalog-page/Raspberry.jpg" width="168" height="168" alt="Мороженое «Малинка»"></a>
                 <a href="#" class="product-link"><h3 class="product-item-title">Малинка</h3></a>
-                <p class="product-item-description grey-text">Сливочное мороженое с малиновым джемом</p>
+                <p class="product-item-description grey-text">Сливочное мороженое<br> с малиновым джемом</p>
                 <section class="product-buy">
                   <b class="product-price">310 ₽/кг</b>
                   <!-- Добавьте ссылке атрибут "disabled", если нужно заблокировать кнопку -->
@@ -203,7 +204,7 @@
               <li class="product-item">
                 <a href="#" class="product-link"><img class="product-img" src="images/catalog-page/Pistachio.jpg" width="168" height="168" alt="Мороженое «Фисташка»"></a>
                 <a href="#" class="product-link"><h3 class="product-item-title">Фисташка</h3></a>
-                <p class="product-item-description grey-text">Фисташковый пломбир с кусочками шоколада</p>
+                <p class="product-item-description grey-text">Фисташковый пломбир<br> с кусочками шоколада</p>
                 <section class="product-buy">
                   <b class="product-price">340 ₽/кг</b>
                   <a class="button-product">
@@ -215,7 +216,7 @@
               <li class="product-item">
                 <a href="#" class="product-link"><img class="product-img" src="images/catalog-page/Blueberry.jpg" width="168" height="168" alt="Мороженое «Черника»"></a>
                 <a href="#" class="product-link"><h3 class="product-item-title">Черника</h3></a>
-                <p class="product-item-description grey-text">Крем-брюле с черничным джемом</p>
+                <p class="product-item-description grey-text">Крем-брюле<br> с черничным джемом</p>
                 <section class="product-buy">
                   <b class="product-price">330 ₽/кг</b>
                   <a class="button-product">
@@ -227,7 +228,7 @@
               <li class="product-item">
                 <a href="#" class="product-link"><img class="product-img" src="images/catalog-page/Bubble-gum.jpg" width="168" height="168" alt="Мороженое «Бабл-гам»"></a>
                 <a href="#" class="product-link"><h3 class="product-item-title">Бабл-гам</h3></a>
-                <p class="product-item-description grey-text">Ванильный пломбир со сладкой посыпкой</p>
+                <p class="product-item-description grey-text">Ванильный пломбир<br> со сладкой посыпкой</p>
                 <section class="product-buy">
                   <b class="product-price">320 ₽/кг</b>
                   <a class="button-product">
@@ -239,7 +240,7 @@
               <li class="product-item">
                 <a href="#" class="product-link"><img class="product-img" src="images/catalog-page/Blackberry.jpg" width="168" height="168" alt="Мороженое «Ежевика»"></a>
                 <a href="#" class="product-link"><h3 class="product-item-title">Ежевика</h3></a>
-                <p class="product-item-description grey-text">Сливочное мороженое с ежевичным джемом</p>
+                <p class="product-item-description grey-text">Сливочное мороженое<br> с ежевичным джемом</p>
                 <section class="product-buy">
                   <b class="product-price">330 ₽/кг</b>
                   <a class="button-product">
@@ -251,7 +252,7 @@
               <li class="product-item">
                 <a href="#" class="product-link"><img class="product-img" src="images/catalog-page/Banana.jpg" width="168" height="168" alt="Мороженое «Банан»"></a>
                 <a href="#" class="product-link"><h3 class="product-item-title">Банан</h3></a>
-                <p class="product-item-description grey-text">Сливочный пломбир с банановым вкусом</p>
+                <p class="product-item-description grey-text">Сливочный пломбир<br> с банановым вкусом</p>
                 <section class="product-buy">
                   <b class="product-price">340 ₽/кг</b>
                   <a class="button-product">
@@ -263,7 +264,7 @@
               <li class="product-item">
                 <a href="#" class="product-link"><img class="product-img" src="images/catalog-page/Chocolate.jpg" width="168" height="168" alt="Мороженое «Шоколадка»"></a>
                 <a href="#" class="product-link"><h3 class="product-item-title">Шоколадка</h3></a>
-                <p class="product-item-description grey-text">Классический шоколадный пломбир</p>
+                <p class="product-item-description grey-text">Классический<br> шоколадный пломбир</p>
                 <section class="product-buy">
                   <b class="product-price">270 ₽/кг</b>
                   <a class="button-product">
@@ -275,7 +276,7 @@
               <li class="product-item">
                 <a href="#" class="product-link"><img class="product-img" src="images/catalog-page/Strawberry.jpg" width="168" height="168" alt="Мороженое «Клубничка»"></a>
                 <a href="#" class="product-link"><h3 class="product-item-title">Клубничка</h3></a>
-                <p class="product-item-description grey-text">Сливочный пломбир с клубничным вкусом</p>
+                <p class="product-item-description grey-text">Сливочный пломбир<br> с клубничным вкусом</p>
                 <section class="product-buy">
                   <b class="product-price">300 ₽/кг</b>
                   <a class="button-product">
@@ -287,7 +288,7 @@
               <li class="product-item">
                 <a href="#" class="product-link"><img class="product-img" src="images/catalog-page/Lemon.jpg" width="168" height="168" alt="Мороженое «Лимон»"></a>
                 <a href="#" class="product-link"><h3 class="product-item-title">Лимон</h3></a>
-                <p class="product-item-description grey-text">Освежающий лимонный сорбет</p>
+                <p class="product-item-description grey-text">Освежающий<br> лимонный сорбет</p>
                 <section class="product-buy">
                   <b class="product-price">310 ₽/кг</b>
                   <a class="button-product">
@@ -299,7 +300,7 @@
               <li class="product-item">
                 <a href="#" class="product-link"><img class="product-img" src="images/catalog-page/Menthol.jpg" width="168" height="168" alt="Мороженое «Ментол»"></a>
                 <a href="#" class="product-link"><h3 class="product-item-title">Ментол</h3></a>
-                <p class="product-item-description grey-text">Сливочный пломбир с ментоловым сиропом</p>
+                <p class="product-item-description grey-text">Сливочный пломбир<br> с ментоловым сиропом</p>
                 <section class="product-buy">
                   <b class="product-price">320 ₽/кг</b>
                   <a class="button-product">
@@ -311,7 +312,7 @@
               <li class="product-item">
                 <a href="#" class="product-link"><img class="product-img" src="images/catalog-page/Nut.jpg" width="168" height="168" alt="Мороженое «Орешек»"></a>
                 <a href="#" class="product-link"><h3 class="product-item-title">Орешек</h3></a>
-                <p class="product-item-description grey-text">Фисташковый пломбир с шоколадным сиропом</p>
+                <p class="product-item-description grey-text">Фисташковый пломбир<br> с шоколадным сиропом</p>
                 <section class="product-buy">
                   <b class="product-price">360 ₽/кг</b>
                   <a class="button-product">
@@ -323,7 +324,7 @@
               <li class="product-item">
                 <a href="#" class="product-link"><img class="product-img" src="images/catalog-page/Creme-brulee.jpg" width="168" height="168" alt="Мороженое «Крем-брюле»"></a>
                 <a href="#" class="product-link"><h3 class="product-item-title">Крем-брюле</h3></a>
-                <p class="product-item-description grey-text">Классическое крем-брюле</p>
+                <p class="product-item-description grey-text">Классическое<br> крем-брюле</p>
                 <section class="product-buy">
                   <b class="product-price">280 ₽/кг</b>
                   <a class="button-product">
@@ -370,7 +371,7 @@
       </div>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer page-footer-catalog">
       <section class="footer-socials">
         <ul class="footer-social-list">
           <li class="footer-social-item">
