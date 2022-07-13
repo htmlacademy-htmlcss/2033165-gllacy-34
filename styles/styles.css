@@ -1413,3 +1413,63 @@ body {
 .main-inner {
     padding-top: 32px;
 }
+
+.grey-line {
+    position: relative;
+    height: 2px;
+    margin: 17px 16px;
+    background-color: rgba(86, 92, 102, 0.3);;
+    border-radius: 2px;
+}
+
+.black-line {
+    position: absolute;
+    height: 2px;
+    background-color: #565C66;
+}
+
+.range-toogle {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    background: #2D3440;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.little-white-sircle {
+    width: 4px;
+    height: 4px;
+    background: #FCFCFC;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.range-toogle:hover {
+    background: #FCFCFC;
+}
+
+.range-toogle:hover div {
+    background: #2D3440;
+}
+
+.range-toogle:focus {
+    background: #FCFCFC;
+    border: 2px solid #2D3440;
+}
+
+.range-toogle:focus div {
+    background: #2D3440;
+}
+
+.range-toogle:active {
+    background: #2D3440;
+}
+
+.range-toogle:active div {
+    background: #2D3440;
+}

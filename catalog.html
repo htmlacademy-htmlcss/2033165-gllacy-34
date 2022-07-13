@@ -73,16 +73,26 @@
                 </select>
               </fieldset>
               <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
+                <legend class="catalog-filter-title">Цена:
+                  <label class="catalog-filter-label">
+                    <input class="range-input" type="number" value="100" name="min-price"> ₽
+                  </label> –
+                  <label class="catalog-filter-label">
+                    <input class="range-input" type="number" value="500" name="max-price"> ₽
+                  </label>
+                </legend>
                 <div class="slider">
-                  <div class="black-line">
-                    <button class="before-button" type="button">
-                      <span class="visually-hidden">Кнопка «от»</span>
-                    </button>
-                    <div class="grey-line"></div>
-                    <button class="after-button" type="button">
-                      <span class="visually-hidden">Кнопка «до»</span>
-                    </button>
+                  <div class="grey-line">
+                    <div class="black-line" style="left: 40px; width: 56px;">
+                      <button class="range-toogle before-button" type="button">
+                        <div class="little-white-sircle"></div>
+                        <span class="visually-hidden">Кнопка «от»</span>
+                      </button>
+                      <button class="range-toogle after-button" type="button">
+                        <div class="little-white-sircle"></div>
+                        <span class="visually-hidden">Кнопка «до»</span>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </fieldset>
