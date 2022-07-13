@@ -2,7 +2,7 @@
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
-    src: url("fonts/inter-400.woff2") format("woff2");
+    src: url("../fonts/inter-400.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -10,7 +10,7 @@
     font-family: "Inter";
     font-style: normal;
     font-weight: 700;
-    src: url("fonts/inter-700.woff2") format("woff2");
+    src: url("../fonts/inter-700.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -18,7 +18,7 @@
     font-family: "Inter";
     font-style: normal;
     font-weight: 900;
-    src: url("fonts/inter-900.woff2") format("woff2");
+    src: url("../fonts/inter-900.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -119,11 +119,10 @@ body {
 
 .navigation {
     display: flex;
-    width: 1017px;
+    width: 100%;
 }
 
 .navigation-list {
-    width: 510px;
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -134,7 +133,6 @@ body {
 }
 
 .navigation-user {
-    max-width: 431px;
     margin-left: auto;
 }
 
@@ -732,6 +730,7 @@ body {
 .advantages-item {
     display: flex;
     width: 505px;
+    height: 66px;
     margin-right: 32px;
     margin-bottom: 40px;
 }
@@ -1219,7 +1218,7 @@ body {
 
 .catalog-filter {
     display: flex;
-    width: 823px;
+    width: 100%;
     flex-wrap: wrap;
     margin-bottom: 44px;
 }
@@ -1246,12 +1245,11 @@ body {
 }
 
 .catalog-filter-group:nth-of-type(3) {
-    width: 379px;
     margin-left: 24px;
 }
 
 .catalog-filter-group:nth-of-type(4) {
-    width: 600px;
+    margin-bottom: 0;
 }
 
 .catalog-filter-title {
@@ -1266,11 +1264,10 @@ body {
     list-style-type: none;
     background: rgba(252, 252, 252, 0.3);
     border-radius: 18px;
-    width: 383px;
 }
 
-.catalog-filter-item:not(:last-child) {
-    margin-right: 16px;
+.catalog-filter-item:last-child {
+    margin-right: 24px;
 }
 
 .filter-button {
@@ -1283,6 +1280,7 @@ body {
     margin-left: 16px;
     border: 2px solid #FCFCFC;
     border-radius: 20px;
+    align-self: flex-end;
 }
 
 .filter-button:hover {
@@ -1317,7 +1315,37 @@ body {
 .select-control {
     line-height: 20px;
     font-size: 14px;
-    background-color: rgba(252, 252, 252, 0.3);
+    background: rgba(252, 252, 252, 0.3);
+    border: none;
+    border-radius: 18px;
+    padding: 8px 0 8px 16px;
+    width: 196px;
+    appearance: none;
+    background-image: url("../images/main-page/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position-x: 93%;
+    background-position-y: center;
+}
+
+.select-control:hover {
+    background: rgba(252, 252, 252, 0.5);
+    background-image: url("../images/main-page/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position-x: 93%;
+    background-position-y: center;
+}
+
+.select-control:focus {
+    background: rgba(252, 252, 252, 0.4);
+    background-image: url("../images/main-page/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position-x: 93%;
+    background-position-y: center;
+    outline: 2px solid #FCFCFC;
+    border-radius: 26px;
 }
 
 .catalog-pagination {
@@ -1480,6 +1508,7 @@ body {
 
 .range-toogle:active {
     background: #2D3440;
+    outline: 0;
 }
 
 .range-toogle:active::before {
@@ -1524,12 +1553,18 @@ body {
 }
 
 .catalog-filter-item {
-    padding: 8px 0 8px 24px;
+    padding: 8px 0;
+    flex-shrink: 0;
+    margin-right: 16px;
+}
+
+.catalog-filter-item:first-child {
+    margin-left: 24px;
 }
 
 .control {
     position: relative;
-    display: flex;
+    display: block;
     padding-left: 24px;
 }
 
@@ -1539,19 +1574,72 @@ body {
     left: 0;
     width: 12px;
     height: 12px;
-    border: 1.33333px solid #2D3440;
+    border: 2px solid #2D3440;
     border-radius: 50%;
     cursor: pointer;
 }
 
+.control:hover .control-mark {
+    border-color: #FCFCFC;
+}
+
+.control:hover .control-mark::before {
+    background-color: #FCFCFC;
+}
+
+.control-input:disabled + .control .control-mark {
+    opacity: 0.4;
+}
+
+.control-input[type="radio"]:checked + .control .control-mark::before {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 6px;
+  height: 6px;
+  background-color: #2D3440;
+  border-radius: 50%;
+  content: "";
+}
+
 .control-label {
     font-size: 14px;
-    flex-shrink: 0;
 }
 
 .catalog-slider {
     position: absolute;
+    width: 196px;
     height: 36px;
     background: rgba(252, 252, 252, 0.3);
     border-radius: 18px;
+}
+
+.control-mark-checkbox {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.control-mark-checkbox svg {
+    fill: #2D3440;
+}
+
+.control:hover .control-mark-checkbox svg{
+    fill: #FCFCFC;
+}
+
+.control-input:disabled + .control .control-mark-checkbox svg {
+    opacity: 0.5;
+}
+
+.control-input[type="checkbox"]:checked + .control .control-mark-checkbox::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    content: "";
 }
