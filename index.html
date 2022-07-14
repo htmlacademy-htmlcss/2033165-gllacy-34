@@ -15,6 +15,23 @@
           <li class="navigation-item">
             <!-- Добавьте класс "navigation-link-current", если пользователь на этой странице -->
             <a class="navigation-link navigation-link-catalog" href="catalog.html">Каталог</a>
+            <!-- Добавьте класс "popover-open", если нужно открыть поповер -->
+            <div class="popover popover-cart popover-catalog">
+              <button class="popover-close-button button-pink popover-close-button-catalog">
+                <span>Каталог</span>
+                <span class="visually-hidden">Закрыть.</span>
+              </button>
+              <div class="popover-content">
+                <h2 class="popover-title-main-catalog">Новинки</h2>
+                <div class="popover-main-catalog-grey-line"></div>
+                <ul class="popover-main-catalog-list">
+                  <li class="popover-main-catalog-item">Сливочное</li>
+                  <li class="popover-main-catalog-item">Щербеты</li>
+                  <li class="popover-main-catalog-item">Фруктовый лед</li>
+                  <li class="popover-main-catalog-item">Мелорин</li>
+                </ul>
+              </div>
+            </div>
           </li>
           <li class="navigation-item">
             <a class="navigation-link navigation-link-delivery-pay" href="#">Доставка и оплата</a>
@@ -33,16 +50,105 @@
               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.66329 8.18794c0-2.57733 2.08934-4.66666 4.66667-4.66666s4.66664 2.08933 4.66664 4.66666c0 1.25728-.4972 2.39846-1.3057 3.23756a.66988.66988 0 0 0-.0657.0577.66988.66988 0 0 0-.0577.0657c-.83915.8085-1.98028 1.3057-3.23754 1.3057-2.57733 0-4.66667-2.0893-4.66667-4.66666Zm8.41181 4.68796c-1.0265.8211-2.32848 1.312-3.74514 1.312-3.31371 0-6-2.6862-6-5.99996 0-3.31371 2.68629-6 6-6 3.31374 0 6.00004 2.68629 6.00004 6 0 1.41669-.491 2.71866-1.3121 3.74516l2.4501 2.4501c.2604.2604.2604.6825 0 .9428-.2603.2604-.6825.2604-.9428 0l-2.4501-2.4501Z"/></svg>
               <span class="visually-hidden">Поиск.</span>
             </a>
+            <!-- Добавьте класс "popover-open", если нужно открыть поповер -->
+            <div class="popover popover-cart popover-search">
+              <button class="popover-close-button button-pink popover-close-button-search">
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.66329 8.18794c0-2.57733 2.08934-4.66666 4.66667-4.66666s4.66664 2.08933 4.66664 4.66666c0 1.25728-.4972 2.39846-1.3057 3.23756a.66988.66988 0 0 0-.0657.0577.66988.66988 0 0 0-.0577.0657c-.83915.8085-1.98028 1.3057-3.23754 1.3057-2.57733 0-4.66667-2.0893-4.66667-4.66666Zm8.41181 4.68796c-1.0265.8211-2.32848 1.312-3.74514 1.312-3.31371 0-6-2.6862-6-5.99996 0-3.31371 2.68629-6 6-6 3.31374 0 6.00004 2.68629 6.00004 6 0 1.41669-.491 2.71866-1.3121 3.74516l2.4501 2.4501c.2604.2604.2604.6825 0 .9428-.2603.2604-.6825.2604-.9428 0l-2.4501-2.4501Z"/></svg>
+                <span class="visually-hidden">Закрыть.</span>
+              </button>
+              <div class="popover-content">
+                <h2 class="visually-hidden">Поиск.</h2>
+                <form class="popover-sign-form" action="https://echo.htmlacademy.ru/" method="post">
+                  <label class="visually-hidden" for="popover-search">E-mail.</label>
+                  <!-- Добавьте кнопке класс "input-error", если пользователь ввёел неправильные данные -->
+                  <!-- Добавьте кнопке атрибут "disabled", если нужно заблокировать input -->
+                  <input class="popover-sign-email popover-search-input input" type="text" placeholder="Поиск по сайту" name="search" id="popover-search">
+                </form>
+              </div>
+            </div>
           </li>
           <li class="navigation-item">
             <a class="navigation-link navigation-link-button navigation-link-input" href="#">
               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9 2.5246a.6667.6667 0 0 1 .6667-.6667h2.6666a1.9997 1.9997 0 0 1 2 2v9.3334a2 2 0 0 1-2 2H9.6667a.6667.6667 0 0 1 0-1.3334h2.6666A.6667.6667 0 0 0 13 13.1913V3.8579a.6664.6664 0 0 0-.6667-.6666H9.6667A.6667.6667 0 0 1 9 2.5246ZM5.8619 4.72a.6667.6667 0 0 1 .9428 0l3.3291 3.329a.6627.6627 0 0 1 .129.177.664.664 0 0 1 .0705.2987.6636.6636 0 0 1-.1998.4759l-3.3288 3.3288a.6667.6667 0 1 1-.9428-.9428L8.057 9.1913H1.6668a.6667.6667 0 1 1 0-1.3334h6.3905L5.8619 5.6627a.6667.6667 0 0 1 0-.9428Z"/></svg>
               Вход</a>
+              <!-- Добавьте класс "popover-open", если нужно открыть поповер -->
+              <div class="popover popover-cart popover-sign">
+                <button class="popover-close-button button-pink popover-close-button-sign">
+                  <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9 2.5246a.6667.6667 0 0 1 .6667-.6667h2.6666a1.9997 1.9997 0 0 1 2 2v9.3334a2 2 0 0 1-2 2H9.6667a.6667.6667 0 0 1 0-1.3334h2.6666A.6667.6667 0 0 0 13 13.1913V3.8579a.6664.6664 0 0 0-.6667-.6666H9.6667A.6667.6667 0 0 1 9 2.5246ZM5.8619 4.72a.6667.6667 0 0 1 .9428 0l3.3291 3.329a.6627.6627 0 0 1 .129.177.664.664 0 0 1 .0705.2987.6636.6636 0 0 1-.1998.4759l-3.3288 3.3288a.6667.6667 0 1 1-.9428-.9428L8.057 9.1913H1.6668a.6667.6667 0 1 1 0-1.3334h6.3905L5.8619 5.6627a.6667.6667 0 0 1 0-.9428Z"/></svg>
+                  Вход
+                  <span class="visually-hidden">Закрыть.</span>
+                </button>
+                <div class="popover-content">
+                  <h2 class="popover-title">Личный кабинет</h2>
+                  <form class="popover-sign-form" action="https://echo.htmlacademy.ru/" method="post">
+                    <label class="visually-hidden" for="popover-email">E-mail.</label>
+                    <!-- Добавьте кнопке класс "input-error", если пользователь ввёел неправильные данные -->
+                    <!-- Добавьте кнопке атрибут "disabled", если нужно заблокировать input -->
+                    <input class="popover-sign-email input" type="email" placeholder="email@example.com" name="sign-in-email" id="popover-email">
+                    <input class="popover-sign-email input" type="password" value="......" name="sign-in-passwordl" id="popover-password">
+                    <!-- Добавьте кнопке атрибут "disabled", если нужно заблокировать кнопку -->
+                    <div class="popover-sign-footer">
+                      <button class="popover-sign-submit form-button" type="submit">Войти</button>
+                      <div>
+                        <a class="popover-sign-link" href="#">Забыли пароль?</a>
+                        <a class="popover-sign-link" href="#">Регистрация</a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
           </li>
           <li class="navigation-item">
             <a class="navigation-link navigation-link-button navigation-link-basket" href="#">
               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.16667 2.10794c-.3682 0-.66667.29848-.66667.66667 0 .36819.29848.66666.66667.66666h1.77127l.46743 2.33539a.66396.66396 0 0 0 .01063.0531l.96738 4.83334.00012.0006c.08356.42.31212.7972.64571 1.0658.3319.2672.74674.4098 1.17262.4033h5.62067c.4259.0065.8408-.1361 1.1727-.4033.3337-.2687.5623-.6462.6458-1.0664l.001-.005.9271-4.86144a.6669.6669 0 0 0-.1412-.54985.66677.66677 0 0 0-.5137-.2417H4.61072L4.1381 2.64377c-.06236-.31157-.33595-.53583-.6537-.53583H1.16667Zm4.52431 8.29446-.81339-4.06396h8.23081l-.7756 4.06686a.49276.49276 0 0 1-.1737.2856.49257.49257 0 0 1-.3181.1087v-.0002H6.19614v-.0001l-.01277.0003a.49245.49245 0 0 1-.31807-.1087.4926.4926 0 0 1-.17413-.2876l-.00019-.0009Zm-1.13359 3.961c0-.688.55771-1.2457 1.24568-1.2457.68798 0 1.24569.5577 1.24569 1.2457 0 .6879-.55771 1.2457-1.24569 1.2457-.68797 0-1.24568-.5578-1.24568-1.2457Zm6.37331 0c0-.688.5577-1.2457 1.2457-1.2457.688 0 1.2457.5577 1.2457 1.2457 0 .6879-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5578-1.2457-1.2457Z"/></svg>
               2 товара</a>
+              <!-- Добавьте класс "popover-open", если нужно открыть поповер -->
+              <div class="popover popover-cart popover-basket">
+                <button class="popover-close-button button-pink popover-close-button-basket">
+                  <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.16667 2.10794c-.3682 0-.66667.29848-.66667.66667 0 .36819.29848.66666.66667.66666h1.77127l.46743 2.33539a.66396.66396 0 0 0 .01063.0531l.96738 4.83334.00012.0006c.08356.42.31212.7972.64571 1.0658.3319.2672.74674.4098 1.17262.4033h5.62067c.4259.0065.8408-.1361 1.1727-.4033.3337-.2687.5623-.6462.6458-1.0664l.001-.005.9271-4.86144a.6669.6669 0 0 0-.1412-.54985.66677.66677 0 0 0-.5137-.2417H4.61072L4.1381 2.64377c-.06236-.31157-.33595-.53583-.6537-.53583H1.16667Zm4.52431 8.29446-.81339-4.06396h8.23081l-.7756 4.06686a.49276.49276 0 0 1-.1737.2856.49257.49257 0 0 1-.3181.1087v-.0002H6.19614v-.0001l-.01277.0003a.49245.49245 0 0 1-.31807-.1087.4926.4926 0 0 1-.17413-.2876l-.00019-.0009Zm-1.13359 3.961c0-.688.55771-1.2457 1.24568-1.2457.68798 0 1.24569.5577 1.24569 1.2457 0 .6879-.55771 1.2457-1.24569 1.2457-.68797 0-1.24568-.5578-1.24568-1.2457Zm6.37331 0c0-.688.5577-1.2457 1.2457-1.2457.688 0 1.2457.5577 1.2457 1.2457 0 .6879-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5578-1.2457-1.2457Z"/></svg>
+                  2 товара
+                  <span class="visually-hidden">Закрыть.</span>
+                </button>
+                <div class="popover-content">
+                  <h2 class="popover-title">Корзина</h2>
+                  <ul class="cart-list">
+                    <li class="cart-item">
+                      <div class="cart-item-image">
+                        <a href="#" class="cart-item-link"><img class="cart-item-img" src="images/catalog-page/Raspberry.jpg" width="46" height="46" alt="Мороженое «Малинка»"></a>
+                      </div>
+                      <div class="cart-item-title-section">
+                        <h3 class="cart-item-title">Малинка</h3>
+                        <p class="cart-item-text">1 кг х 310 ₽</p>
+                      </div>
+                      <div class="cart-item-buy">
+                        <b>310 ₽</b>
+                      </div>
+                      <div class="cart-item-delete">
+                        <span class="visually-hidden">Удалить из корзины.</span>
+                      </div>
+                    </li>
+                    <li class="cart-item">
+                      <div class="cart-item-image">
+                        <a href="#" class="cart-item-link"><img class="cart-item-img" src="images/catalog-page/Bubble-gum.jpg" width="46" height="46" alt="Мороженое «Бабл-гам»"></a>
+                      </div>
+                      <div class="cart-item-title-section">
+                        <h3 class="cart-item-title">Бабл-гам</h3>
+                        <p class="cart-item-text">1,5 кг х 320 ₽</p>
+                      </div>
+                      <div class="cart-item-buy">
+                        <b>480 ₽</b>
+                      </div>
+                      <div class="cart-item-delete">
+                        <span class="visually-hidden">Удалить из корзины.</span>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="popover-grey-line"></div>
+                  <div class="popover-buy">
+                    <button class="form-button" type="submit">Оформить заказ</button>
+                    <div class="popover-buy-price">Итого: <input class="total-price-input range-input" type="number" value="790" name="total-price"> ₽</div>
+                  </div>
+                </div>
+              </div>
           </li>
         </ul>
       </nav>
