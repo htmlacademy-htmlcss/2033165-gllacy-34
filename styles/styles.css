@@ -289,7 +289,6 @@ body {
     opacity: 0.4;
     top: 224px;
     right: 5px;
-    background-color: #FFCBD8;
     background-image: url("../images/main-page/slider-background.png");
     background-repeat: no-repeat;
     background-size: 100px 100px;
@@ -300,7 +299,6 @@ body {
 }
 
 .slider-image-section-current {
-    background-color: #FFCBD8;
     background-image: url("../images/main-page/slider-background.png");
     background-repeat: no-repeat;
     background-size: 312px 312px;
@@ -1207,7 +1205,6 @@ body {
     left: -24px;
     font-weight: 700;
     padding-left: 24px;
-    background-color: #000000;
     background-image: url("../images/main-page/heart-fill.svg");
     background-repeat: no-repeat;
     background-size: 16px 16px;
@@ -1264,7 +1261,6 @@ body {
     position: absolute;
     top: 5px;
     right: -20px;
-    background-color: #000000;
     background-image: url("../images/main-page/breadcrumb.svg");
     background-repeat: no-repeat;
     background-size: 12px 12px;
@@ -1488,7 +1484,6 @@ body {
 .pagination-prev {
     width: 16px;
     height: 16px;
-    background-color: #000000;
     background-image: url("../images/main-page/arrow-left.svg");
     background-size: 16px 16px;
     background-repeat: no-repeat;
@@ -1498,7 +1493,6 @@ body {
 .pagination-next {
     width: 16px;
     height: 16px;
-    background-color: #000000;
     background-image: url("../images/main-page/arrow-right.svg");
     background-size: 16px 16px;
     background-repeat: no-repeat;
