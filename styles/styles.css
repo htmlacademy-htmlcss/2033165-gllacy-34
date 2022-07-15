@@ -1328,6 +1328,10 @@ body {
     margin-left: 14px;
 }
 
+.catalog-filter-title-price {
+    margin-left: -19px;
+}
+
 .catalog-filter-list {
     display: flex;
     margin: 0;
