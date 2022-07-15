@@ -27,6 +27,7 @@ html {
 }
 
 body {
+    min-width: 1366px;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -132,6 +133,10 @@ body {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.navigation-list:first-child {
+    width: 400px;
 }
 
 .navigation-user {
@@ -488,7 +493,7 @@ body {
     fill: #FCFCFC;
 }
 
-.slider-social-item:nth-of-type(3n) {
+.slider-social-item:last-child {
     margin-right: 0;
 }
 
