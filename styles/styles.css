@@ -71,38 +71,38 @@ body {
     background-color: #FCFCFC;
     text-decoration: none;
     border-radius: 26px;
-    outline: 4px solid rgba(252, 252, 252, 0.4);
-    box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+    box-shadow: 0 0 0 4px rgba(252, 252, 252, 0.4),
+                0 4px 12px rgba(45, 52, 64, 0.1);
     background-clip: padding-box;
     cursor: pointer;
 }
 
 .button:hover {
     background: rgba(252, 252, 252, 0.4);
-    outline: 4px solid #FCFCFC;
-    box-shadow: 0 4px 15px rgba(133, 133, 133, 0.15);
+    box-shadow: 0 0 0 4px #FCFCFC,
+                0 4px 15px rgba(133, 133, 133, 0.15);
     border-radius: 26px;
 }
 
 .button:focus {
     background: rgba(252, 252, 252, 0.5);
-    outline: 2px solid #2D3440;
-    box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+    box-shadow: 0 0 0 2px #2D3440,
+                0 4px 12px rgba(45, 52, 64, 0.1);
     border: 0;
     border-radius: 26px;
 }
 
 .button:active {
     background: #FCFCFC;
-    outline: 2px solid #2D3440;
-    box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+    box-shadow: 0 0 0 2px #2D3440,
+                0 4px 12px rgba(45, 52, 64, 0.1);
     border-radius: 26px;
 }
 
 .button:disabled {
     background: #E7E7E7;
     border: 0;
-    outline: 4px solid rgba(252, 252, 252, 0.4);
+    box-shadow: 0 0 0 4px rgba(252, 252, 252, 0.4);
     border-radius: 26px;
     color: #B9B9B9;
 }
@@ -167,13 +167,14 @@ body {
 
 .navigation-link:focus {
     background: rgba(252, 252, 252, 0.5);
-    outline: 2px solid #2D3440;
+    box-shadow: 0 0 0 2px #2D3440;
     border-radius: 30px;
 }
 
 .navigation-link:active {
     background: #FCFCFC;
-    outline: 0;
+    box-shadow: 0;
+    border-radius: 30px;
 }
 
 .navigation-link:last-child {
@@ -332,7 +333,7 @@ body {
 
 .slider-button:focus {
     background: rgba(252, 252, 252, 0.3);
-    outline: 2px solid #2D3440;
+    box-shadow: 0 0 0 2px #2D3440;
     border: 0;
 }
 
@@ -343,7 +344,7 @@ body {
 .slider-button:active {
     background: rgba(252, 252, 252, 0.5);
     border: 0;
-    outline: 0;
+    box-shadow: 0;
 }
 
 .slider-button:active svg {
@@ -353,9 +354,13 @@ body {
 .slider-button:disabled {
     background: rgba(252, 252, 252, 0.3);
     opacity: 0.4;
-    outline: 2px solid #FCFCFC;
+    box-shadow: 0 0 0 2px #FCFCFC;
     border-radius: 50%;
     border: 0;
+}
+
+.slider-button:disabled svg {
+    fill: #FCFCFC;
 }
 
 .slider-button-svg {
@@ -412,20 +417,21 @@ body {
 
 .slider-paragraph-link:hover {
     background: rgba(252, 252, 252, 0.3);
-    outline: 1px solid #FCFCFC;
+    box-shadow: 0 0 0 1px #FCFCFC;
     opacity: 1;
     border-radius: 50%;
 }
 
 .slider-paragraph-link:focus {
     background: rgba(252, 252, 252, 0.3);
-    border: 1px solid #2D3440;
+    box-shadow: 0 0 0 1px #2D3440;
+    opacity: 1;
 }
 
 .slider-paragraph-link:active {
     background-color: white;
     opacity: 0.5;
-    outline: 0;
+    box-shadow: 0;
 }
 
 .slider-socials {
@@ -449,33 +455,33 @@ body {
     display: block;
     width: 24px;
     height: 24px;
-    outline: 2px solid rgba(252, 252, 252, 0.3);
+    box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
     border-radius: 50%;
 }
 
 .slider-social-link:hover svg,
 .footer-social-link:hover svg {
     background-color: #2D3440;
-    outline: 2px solid rgba(252, 252, 252, 0.5);
+    box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.5);
     border-radius: 50%;
 }
 
 .slider-social-link:focus svg,
 .footer-social-link:focus svg {
     background-color: #2D3440;
-    outline: 2px solid #2D3440;
+    box-shadow: 0 0 0 2px #2D3440;
     border-radius: 50%;
 }
 
 .slider-social-link:active,
 .footer-social-link:active {
     opacity: 0.5;
-    outline: 0;
+    box-shadow: 0;
 }
 
 .slider-social-link:active svg,
 .footer-social-link:active svg {
-    outline: 0;
+    box-shadow: 0;
 }
 
 .slider-social-icon {
@@ -637,7 +643,7 @@ body {
 .button-popular:hover,
 .button-product:hover {
     background: rgba(252, 252, 252, 0.3);
-    outline: 2px solid #FF2F64;
+    box-shadow: 0 0 0 2px #FF2F64;
     border-radius: 50%;
 }
 
@@ -649,7 +655,7 @@ body {
 .button-popular:focus,
 .button-product:focus {
     background: #FF2F64;
-    outline: 2px solid #2D3440;
+    box-shadow: 0 0 0 2px #2D3440;
     border-radius: 50%;
 }
 
@@ -661,7 +667,7 @@ body {
 .button-popular:active,
 .button-product:active {
     background: #FFCBD8;
-    outline: 2px solid #FF2F64;
+    box-shadow: 0 0 0 2px #FF2F64;
     border-radius: 50%;
 }
 
@@ -673,7 +679,7 @@ body {
 .button-popular:disabled,
 .button-product:disabled {
     background: #B9B9B9;
-    outline: 0;
+    box-shadow: 0;
     border-radius: 50%;
 }
 
@@ -873,11 +879,11 @@ body {
 }
 
 .input:hover {
-    outline: 1px solid #2D3440;
+    border: 1px solid #2D3440;
 }
 
 .input:focus {
-    outline: 2px solid #2D3440;
+    box-shadow: 0 0 0 1px #2D3440;
 }
 
 .input::placeholder {
@@ -897,16 +903,18 @@ body {
     background: #E7E7E7;
     border: 1px solid #B9B9B9;
     border-radius: 4px;
-    outline: 0;
+    box-shadow: 0;
 }
 
 .input-error {
-    border: 1px solid #EA5454;
+    box-shadow: 0 0 0 1px #EA5454;
+    border: 0;
     border-radius: 4px;
 }
 
 .input-error:hover {
-    outline: 2px solid #EA5454;
+    box-shadow: 0 0 0 2px #EA5454;
+    border: 0;
     border-radius: 4px;
 }
 
@@ -1100,23 +1108,24 @@ body {
 
 .form-button:focus {
     background: #FF2F64;
-    outline: 2px solid #2D3440;
-    box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+    box-shadow: 0 0 0 2px #2D3440,
+                0 4px 12px rgba(45, 52, 64, 0.1);
     border-radius: 26px;
     color: #FCFCFC;
 }
 
 .form-button:active {
     background: #FEAFC3;
-    outline: 2px solid #2D3440;
-    box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+    box-shadow: 0 0 0 2px #2D3440,
+                0 4px 12px rgba(45, 52, 64, 0.1);
     border-radius: 26px;
     color: #FCFCFC;
+    border: 4px solid #FEAFC3;
 }
 
 .form-button:disabled {
     background: #B9B9B9;
-    outline: 4px solid rgba(185, 185, 185, 0.3);
+    box-shadow: 0 0 0 4px rgba(185, 185, 185, 0.3);
     border-radius: 26px;
     font-weight: 400;
     color: #565C66;
@@ -1156,7 +1165,7 @@ body {
     display: block;
     width: 24px;
     height: 24px;
-    outline: 2px solid rgba(252, 252, 252, 0.3);
+    box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
     border-radius: 50%;
 }
 
@@ -1344,13 +1353,13 @@ body {
 .filter-button:hover {
     background: #FCFCFC;
     border: 0;
-    outline: 2px solid rgba(252, 252, 252, 0.3);
+    box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
     border-radius: 20px;
 }
 
 .filter-button:focus {
     background: rgba(252, 252, 252, 0.3);
-    outline: 2px solid #2D3440;
+    box-shadow: 0 0 0 2px #2D3440;
     border-radius: 20px;
     border: 0;
 }
@@ -1358,7 +1367,7 @@ body {
 .filter-button:active {
     background: rgba(252, 252, 252, 0.5);
     border-radius: 20px;
-    outline: 0;
+    box-shadow: 0;
     border: 0;
 }
 
@@ -1366,7 +1375,7 @@ body {
     background: rgba(252, 252, 252, 0.3);
     opacity: 0.4;
     border: 0;
-    outline: 2px solid #FCFCFC;
+    box-shadow: 0 0 0 2px #FCFCFC;
     border-radius: 20px;
 }
 
@@ -1401,7 +1410,7 @@ body {
     background-size: 16px 16px;
     background-position-x: 93%;
     background-position-y: center;
-    outline: 2px solid #FCFCFC;
+    box-shadow: 0 0 0 2px #FCFCFC;
     border-radius: 26px;
 }
 
@@ -1453,13 +1462,13 @@ body {
 
 .pagination-item:focus {
     background: rgba(252, 252, 252, 0.3);
-    outline: 1px solid #2D3440;
+    box-shadow: 0 0 0 1px #2D3440;
     border-radius: 50%;
 }
 
 .pagination-item:active {
     background: rgba(252, 252, 252, 0.5);
-    outline: 1px solid #FCFCFC;
+    box-shadow: 0 0 0 1px #FCFCFC;
     border-radius: 50%;
 }
 
@@ -1559,7 +1568,7 @@ body {
 
 .range-toogle:focus {
     background: #FCFCFC;
-    outline: 2px solid #2D3440;
+    box-shadow: 0 0 0 2px #2D3440;
 }
 
 .range-toogle:focus::before {
@@ -1568,7 +1577,7 @@ body {
 
 .range-toogle:active {
     background: #2D3440;
-    outline: 0;
+    box-shadow: 0;
 }
 
 .range-toogle:active::before {
@@ -1653,11 +1662,11 @@ body {
 }
 
 .control-input:focus + .control .control-mark {
-    outline: 2px solid #FCFCFC;
+    box-shadow: 0 0 0 2px #FCFCFC;
 }
 
 .control-input:focus + .control .control-mark-checkbox {
-    outline: 2px solid #FCFCFC;
+    box-shadow: 0 0 0 2px #FCFCFC;
 }
 
 .control-label {
@@ -1885,7 +1894,7 @@ body {
 
 .popover-cart .popover-close-button:focus {
     background: rgba(252, 252, 252, 0.5);
-    outline: 2px solid #000000;
+    box-shadow: 0 0 0 2px #000000;
     border-radius: 30px;
     color: #2D3440;
 }
@@ -1898,7 +1907,7 @@ body {
     background: #FCFCFC;
     border-radius: 30px;
     color: #2D3440;
-    outline: 0;
+    box-shadow: 0;
 }
 
 .popover-cart .popover-close-button:active svg {
